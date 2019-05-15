@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<link href='https://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Fruktur' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Original Surfer' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
+<head >
+<title>
+	event
+</title>
+
+</head>
+<style type="text/css">
+	body
+	{
+		background-image: url("bgk2.jpg");
+		margin: 0px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	header.sec{
+		height: 85vh;
+		background-color: rgba(0,0,0,0.6);
+		padding-left: 25px;
+		padding-right: 25px; 
+
+		
+	}
+div.footer{
+	position: absolute;
+	bottom: 0%;
+	
+
+	background-image: linear-gradient(to right,white,#6600ff);
+	
+	width: 40%;
+	left:31%;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 10px;
+	color: #ff3300;
+	border:2px solid #b30059;
+}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  color:black;
+   background-image:  linear-gradient(#000066,white);
+   overflow: hidden;
+   font-family: 'Julee';
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #6600ff;
+  text-align: center;
+  padding: 2px 16px;
+  text-decoration: underline;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #66c2ff;
+  color: white;
+}
+
+.active {
+	color:white;
+  background-color: #6600ff;
+}
+.imm{
+	float: left;
+	border: 2px solid #6600ff;
+	border-radius: 5px;
+}
+	span.eve{
+		position: absolute;
+		left:50%;
+		transform: translateX(-50%);
+		text-align: center;
+		top:18%;
+		 font-family:'Fruktur';
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  font-size: 110px;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+}
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+   position: absolute;
+  left:12%;
+  top:50%;
+}
+
+.flip-card-inner {
+  position: absolute;
+  
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.7);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ 
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+	
+  
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+ 
+  border:2px solid black;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+	 position: absolute;
+	  border:2px solid black;
+  border-radius: 10px;
+  
+  background-color: #7a1f5c;
+  color: #ffff00;
+  transform: rotateY(180deg);
+  z-index: 1;
+ font-family: 'Original Surfer';
+  font-size: 20px;
+}
+.robo{
+	
+	position:relative;
+	top:50%;
+	transform: translateY(-100%);
+	
+}
+
+
+.flip-card1 {
+  background-color:transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+   position: absolute;
+  left:33%;
+  top:50%;
+
+
+}
+
+.flip-card-inner1 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.7);
+}
+.flip-card1:hover .flip-card-inner1 {
+
+  transform: rotateY(180deg);
+ 
+  }
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front1 {
+	
+  
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+
+  border:2px solid black;
+  border-radius: 10px;
+}
+
+.flip-card-back1 {
+	 position: absolute;
+
+	  border:2px solid black;
+  border-radius: 10px;
+  
+  background-color: #cc9900;
+  color: #ffff00;
+  transform: rotateY(180deg);
+
+  z-index: 1;
+
+ font-family: 'Original Surfer';
+  font-size: 20px;
+
+
+}
+
+
+
+.flip-card2 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+   position: absolute;
+  left:54%;
+  top:50%;
+
+
+}
+
+.flip-card-inner2 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.7);
+}
+.flip-card2:hover .flip-card-inner2 {
+
+  transform: rotateY(180deg);
+ 
+  }
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front2 {
+	
+  
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+
+  border:2px solid black;
+  border-radius: 10px;
+}
+
+.flip-card-back2 {
+	 position: absolute;
+
+	  border:2px solid black;
+  border-radius: 10px;
+  
+  background-color: #009933;
+  color: #ffff00;
+  transform: rotateY(180deg);
+
+  z-index: 1;
+font-family: 'Original Surfer';
+  font-size: 20px;
+
+ 
+
+
+}
+
+
+.flip-card3 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+   position: absolute;
+  left:74%;
+  top:50%;
+
+
+}
+
+.flip-card-inner3 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.7);
+}
+.flip-card3:hover .flip-card-inner3 {
+
+  transform: rotateY(180deg);
+ 
+  }
+.flip-card-front3, .flip-card-back3 {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front3 {
+	
+  
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+  
+  border:2px solid black;
+  border-radius: 10px;
+}
+
+.flip-card-back3 {
+	 position: absolute;
+
+	  border:2px solid black;
+  border-radius: 10px;
+  font-family: 'Original Surfer';
+  font-size: 20px;
+  background-color: #003399;
+  color: #ffff00;
+  transform: rotateY(180deg);
+
+  z-index: 1;
+
+ 
+
+
+}
+
+  .imi{
+  	border-radius: 10px;
+  }
+</style>
+<body >
+	<ul>
+		<li class="imm"><img src="ktj3.jpg" alt="lo" width="90" height="35"></li>
+		<li><a href="spons.html">Sponsors</a></li>
+		
+		<li><a class="active" href="event.html">Events</a></li>
+		<li><a href="abtktj.html">About</a></li>
+		<li><a  href="index.html">Home</a></li>
+	</ul>
+	<header class="sec">
+		<span class="eve">EVENTS</span>
+	
+		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="robot.jpg" alt="Ar"class="imi" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+     <h1 class="robo" >Robo Cup </h1>
+     
+    </div>
+  </div>
+</div>
+
+	<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="case1.jpg" alt="Ar" class="imi" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back1">
+     <h1 class="robo" >Case Challenge </h1>
+     
+    </div>
+  </div>
+</div>
+
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="code1.jpg" class="imi" alt="Ar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back2">
+     <h1 class="robo" >Overnite Coding </h1>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card3">
+  <div class="flip-card-inner3">
+    <div class="flip-card-front3">
+      <img src="music.jpg" alt="Ar" class="imi" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back3">
+     <h1 class="robo" >Pronite </h1>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+		</header>
+		<div class="footer">
+	<span><img src= "cr.png" alt="cr" width="20" height="20"  > </span> Copyright Susmita_Mazumdar
+</div>
+</body>
+</html>
